@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:background="@color/title_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <com.hexlone.hexlonecalendar.view.DateDisplayView
+            android:id="@+id/dateDisplayView_month"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/mon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/dateDisplayView_month"
+            android:gravity="center"
+            android:text="月"
+            android:textColor="@color/white"
+            android:textSize="@dimen/display_textsize" />
+
+        <com.hexlone.hexlonecalendar.view.DateDisplayView
+            android:id="@+id/dateDisplayView_year"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/mon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/dateDisplayView_year"
+            android:gravity="center"
+            android:text="年"
+            android:textColor="@color/white"
+            android:textSize="@dimen/def_day_textsize" />
+
+
+    </RelativeLayout>
+
+
+    <include
+        layout="@layout/layout_week_column_name"/>
+    <com.hexlone.hexcalendar.HexCalendarLayout
+        android:id="@+id/hexCalendarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    </com.hexlone.hexcalendar.HexCalendarLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HexCalendarView">
+        <attr name="week_column_name_height" format="dimension"/>
+        <attr name="week_column_name_textsize" format="dimension"/>
+        <attr name="week_column_name_textcolor" format="color"/>
+
+        <attr name="solar_day_textsize" format="dimension"/>
+        <attr name="solar_day_textcolor" format="dimension"/>
+
+        <attr name="lunar_day_textsize" format="dimension"/>
+        <attr name="lunar_day_textcolor" format="dimension"/>
+
+
+    </declare-styleable>
+</resources>
